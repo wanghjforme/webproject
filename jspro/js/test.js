@@ -11,7 +11,10 @@
     if(null) is false
     if(undefined) is false;
 */
+var fullname ='John Doe';
+var dd = "haha";
 function testIf(){
+
     var temp1 = 2/'a';
     var temp2 = 2/0;
     var temp3 = 2/'0.5';
@@ -29,7 +32,45 @@ function testIf(){
     var i = 0123;//display 108
         i = 123; //display 148
     var m = i+25;
-    document.write(m + "");
+    for(var i=0, j=0; i<10, j<6; i++, j++){
+
+       var  k = i + j;
+        document.write(k + "<br>");
+    }
+
+
+    var obj ={
+        fullname:'Colin Ihrig',
+        prop:{
+            fullname:'Aurelio De Rosa',
+            getFullname:function(){
+                    return this.fullname;
+            }
+        }
+    };
+    document.write(obj.prop.getFullname()+"<br>");
+    var test = obj.prop.getFullname;
+    document.write(obj.prop.getFullname().apply());
+}
+//而innerText只适用于IE浏览器
+function innerHTMLDemo()
+{
+    test_id1.innerHTML="<i><u>设置或获取位于对象起始和结束标签内的 HTML.</u></i>";
+}
+//.innerText
+function innerTextDemo()
+{
+    test_id2.innerText="<i><u>设置或获取位于对象起始和结束标签内的文本.</u></i>";
+}
+//.outerHTML
+function outerHTMLDemo()
+{
+    test_id3.outerHTML="<i><u>设置或获取对象及其内容的 HTML 形式.</u></i>";
+}
+//.outerText
+function outerTextDemo()
+{
+    test_id4.outerText="<i><u>设置(包括标签)或获取(不包括标签)对象的文本.</u></i>";
 }
 
 //判断的是否是NaN

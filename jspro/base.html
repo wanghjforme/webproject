@@ -9,8 +9,22 @@
     <script type="text/javascript" src="js/func.js" ></script>
     <script type="text/javascript" src="js/util.js" ></script>
     <script type="text/javascript" src="js/class.js" ></script>
+    <script type="text/javascript">
+        require([B,C],function(B,C){
+            var A = {};
+            A.say = B.say;
+            A.run = C.run;
+            return A;
+        });
+    </script>
 </head>
 <body >
-   <input type="button" id="btn" onclick="testConstructor()" value="clickme">
+   <input type="button" id="btn" onclick="testIf()" value="clickme">
+   <ul>
+       <li id="test_id1" onclick="innerHTMLDemo()">innerHTML效果.</li>
+       <li id="test_id2" onclick="innerTextDemo()">innerText效果.</li>
+       <li id="test_id3" onclick="outerHTMLDemo()">outerHTML效果.</li>
+       <li id="test_id4" onclick="outerTextDemo()">outerText效果.</li>
+   </ul>
 </body>
 </html>

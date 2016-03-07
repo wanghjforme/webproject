@@ -102,12 +102,9 @@ function constructFunction(){
 }
 
 (function(name){
-    alert(document.getElementById('btn'));
+    document.write("haha");
 })("wanghj");
 
-alert(document.getElementById('btn'));
-document.read(function(){
 
-});
 
 
